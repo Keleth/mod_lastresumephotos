@@ -1,0 +1,66 @@
+.mod-last-photos-block {
+    background: #f9f9f9;
+    border: solid 1px #ddd;
+    border-radius: 4px;
+    padding: 8px;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.mod-last-photos-block ul {
+    display: inline-block;
+    overflow: hidden;
+    margin: 10px 0;
+    padding-left: 0px;
+}
+
+.mod-last-photos-block ul li {
+    width: 19%;
+    float: left;
+    position: relative;
+    overflow: hidden;
+    margin-left: 6px;
+    padding-bottom: 5px;
+}
+
+.mod-last-photos-block li a {
+    height: 138px;
+    width: 101px;
+    padding: 0 30px 20px 0;
+    position: relative;
+    overflow: hidden;
+    display: block;
+    text-decoration: none;
+    background: white none repeat scroll 0 0;
+}
+
+.mod-last-photos-block li a img {
+    object-fit: cover;
+    z-index: 19;
+    position: absolute;
+    height: 180px;
+}
+
+.mod-last-photos-block li a span {
+    margin-bottom: 0.5em;
+    margin-left: 8px;
+    margin-top: 0.5em;
+    color: grey;
+    font-family: arial;
+    font-size: 10px;
+    top: -185px;
+    left:35px;
+    width: 115px;
+    display: block;
+}
+
+@media (max-width: 600px) {
+    .mod-last-photos-block ul li {
+        width: 46%;
+        float: left;
+        position: relative;
+        overflow: hidden;
+        margin-left: 6px;
+        padding-bottom: 5px;
+    }
+}

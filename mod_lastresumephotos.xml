@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1.0" client="site" method="upgrade">
+    <name>Last resumes with photos</name>
+    <author>Danila Shkerin</author>
+    <creationDate>2018-05-12</creationDate>
+    <copyright>All rights reserved by "Author"</copyright>
+    <license>LGPL 2.0</license>
+    <authorEmail>dscelt@gmail.com</authorEmail>
+    <authorUrl>ke1eth.myftp.biz</authorUrl>
+    <version>1.0.0</version>
+    <description>Shows last resumes with photos from jsjobs component</description>
+    <files>
+        <filename module="mod_lastresumephotos">mod_lastresumephotos.php</filename>
+        <filename>helper.php</filename>
+        <filename>tmpl/default.php</filename>
+        <folder>css</folder>
+        <folder>js</folder>
+    </files>
+
+    <!-- Optional parameters -->
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field name="resumecount" type="text" default="10" label="Number of displayable resumes" description="Count of resumes to show" />
+                <field name="load_JQuery" type="radio" default="0" label="Load JQuery" description="Load provided JQuery library, it may conflict if already loaded from somewhere">
+                    <option value="1">YES</option>
+                    <option value="0">NO</option>
+                </field>                
+            </fieldset>
+        </fields>
+    </config>
+
+</extension>
